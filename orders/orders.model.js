@@ -1,4 +1,4 @@
-module.exports = [
+const orders = [
   {
     id: 1,
     subtotal: 200,
@@ -14,3 +14,11 @@ module.exports = [
     ],
   },
 ];
+
+function getAllOrders() {
+  return orders;
+}
+
+module.exports = {
+  getAllOrders,
+};
